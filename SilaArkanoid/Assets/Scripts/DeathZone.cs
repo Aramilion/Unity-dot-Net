@@ -8,6 +8,8 @@ public class DeathZone : MonoBehaviour
         if(collider.gameObject.tag == "Ball")
         {
             Destroy(collider.gameObject);
+
+            Player.instance.CreateNewBall();
         }
     }
 }
