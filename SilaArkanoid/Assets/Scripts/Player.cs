@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Player : MonoBehaviour
     public GameObject ballPrefab;
 
     private bool isHoldingBall = true;
+
+    public GameObject settings;
 
     void Awake()
     {
@@ -27,6 +30,20 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            bool areSettingsAcive = settings.activeSelf;
+            settings.SetActive(!areSettingsAcive);
+            if(settings.activeSelf == true)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+        }
+
         //Desktop Input
         float currentSpeed = Input.GetAxis("Horizontal") * Time.deltaTime * playerSpeed;
         transform.Translate(currentSpeed, 0, 0);
@@ -46,7 +63,7 @@ public class Player : MonoBehaviour
         Vector2 touchPosition = Camera.main.ScreenToWorldPoint(currentTouch.position);
 
         //Add fore toBall
-        if (touchPosition.y > 0)
+        if (touchPosition.y > 0 && isHoldingBall)
         {
             ball.transform.SetParent(null);
             AddForceToBall();
@@ -98,5 +115,19 @@ public class Player : MonoBehaviour
         ball.transform.SetParent(transform);
         ball.transform.localPosition = new Vector3(0, 0.75f, 0);
         isHoldingBall = true;
+    }
+
+    public void EndGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
+    public void ChangeSpeed(Slider slider)
+    {
+        playerSpeed = (slider.value * 10) + 3;
     }
 }
