@@ -1,0 +1,101 @@
+fileFormatVersion: 2
+guid: 34ab3c750c0220a4998201aeb1a2cc79
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    4300000: porch_support_1
+    4300002: porch_support_2
+    4300004: porch_support_3
+    4300006: porch_support_4
+    4300008: porch_support_5
+    4300010: porch_support_6
+    4300012: fence_1
+    4300014: mat
+    4300016: base_plank_1
+    4300018: base_plank_2
+    4300020: base_plank_3
+    4300022: base_plank_4
+    4300024: base_plank_5
+    4300026: fence_3
+    4300028: fence_2
+    4300030: porch_support_7
+    4300032: ramp_slat_11
+    4300034: ramp_slat_9
+    4300036: ramp_slat_7
+    4300038: ramp_slat_3
+    4300040: ramp_end_2
+    4300042: ramp_end_1
+    4300044: stair_base2
+    4300046: stair_base1
+    4300048: stilt_1
+    4300050: stilt_2
+    4300052: stilt_4
+    4300054: stilt_6
+    4300056: stilt_5
+    4300058: stilt_support_2
+    4300060: stilt_support_1
+    4300062: stilt_7
+  materials:
+    importMaterials: 1
+    materialName: 3
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.25
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
